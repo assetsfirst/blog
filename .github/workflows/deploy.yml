@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         run: npm run build && npm run postbuild
-        working-directory: .
+        working-directory: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
