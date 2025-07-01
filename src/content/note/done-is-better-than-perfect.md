@@ -7,7 +7,7 @@ tags: ["SideProjects", "Productivity", "LaunchFast"]
 ---
 > "If you're not embarrassed by the first version of your product, you've launched too late."
 
-> Reid Hoffman's legendary quote hit me like a ton of bricks—unfortunately, a little too late. 😅
+Reid Hoffman's legendary quote hit me like a ton of bricks—unfortunately, a little too late. 😅
 
 There's a **special kind of demoralization** that creeps in when you're building, building, building... and still have nothing to show for it. It's the silent killer of side projects, the motivation drain that leaves brilliant ideas gathering digital dust.
 
