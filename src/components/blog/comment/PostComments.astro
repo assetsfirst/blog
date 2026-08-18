@@ -10,9 +10,25 @@
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="preferred_color_scheme"
+        data-theme="noborder_dark"
         data-lang="ru"
         data-loading="lazy"
         crossorigin="anonymous"
+        id="giscus-frame"
         async>
+</script>
+
+<script is:inline>
+    function sendThemeToGiscus(theme) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            'https://giscus.app'
+        );
+    }
+
+    document.addEventListener('theme-change', (event) => {
+        sendThemeToGiscus(event.detail.theme === 'dark' ? 'noborder_dark' : 'noborder_light');
+    });
 </script>
