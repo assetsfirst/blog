@@ -2,6 +2,7 @@
 import { type CollectionEntry, render } from "astro:content";
 import FormattedDate from "@/components/FormattedDate.astro";
 import type { HTMLTag, Polymorphic } from "astro/types";
+import PostComments from "@/components/blog/comment/PostComments.astro";
 
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
 	note: CollectionEntry<"note">;
@@ -54,5 +55,8 @@ const { Content } = await render(note);
 		}} 
 	>
 		<Content />
+        {
+            isPreview ? {} : <PostComments />
+        }
 	</div>
 </article>

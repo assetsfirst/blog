@@ -4,6 +4,7 @@ import TOC from "@/components/blog/TOC.astro";
 import BaseLayout from "./Base.astro";
 import SeriesPanel from "@/components/SeriesPanel.astro";
 import { Icon } from "astro-icon/components";
+import PostComments from "@/components/blog/comment/PostComments.astro";
 
 interface Props {
 	series: CollectionEntry<"series">;
@@ -128,6 +129,7 @@ const { headings } = await render(series);
 		</span>
 	</mobile-button>
 	-->
+    <PostComments />
 </BaseLayout>
 
 <script>

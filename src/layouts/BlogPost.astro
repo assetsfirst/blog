@@ -6,6 +6,7 @@ import WebMentions from "@/components/blog/webmentions/index.astro";
 import BaseLayout from "./Base.astro";
 import SeriesPanel from "@/components/SeriesPanel.astro";
 import { Icon } from "astro-icon/components";
+import PostComments from "@/components/blog/comment/PostComments.astro";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -139,6 +140,7 @@ const { headings } = await render(post);
 		</mobile-button>
 	)}
 	-->
+    <PostComments />
 </BaseLayout>
 
 <!-- Copy code button -->
