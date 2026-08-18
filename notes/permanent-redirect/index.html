@@ -159,7 +159,20 @@
 <li>Редирект сработает для любой страницы старого сайта (например, refdev.ru/post-1 станет blog.assetsfirst.ru/post-1).</li>
 <li>После внесения изменений стоит проверить редирект с помощью онлайн-сервисов или браузера в режиме инкогнито.</li>
 </ul>
-<p>Итог: теперь весь трафик со старого домена плавно и правильно перетекает на новый, а я могу спокойно развивать свои проекты под единым крылом assetsfirst.ru. Надеюсь, мой скромный опыт окажется полезным и для вас.</p> <section class="giscus mx-auto mt-10 w-full"></section> <script src="https://giscus.app/client.js" data-repo="assetsfirst/blog" data-repo-id="R_kgDOOoxoDA" data-category="Blog Post Comments" data-category-id="DIC_kwDOOoxoDM4DDpbP" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="ru" data-loading="lazy" crossorigin="anonymous" async>
+<p>Итог: теперь весь трафик со старого домена плавно и правильно перетекает на новый, а я могу спокойно развивать свои проекты под единым крылом assetsfirst.ru. Надеюсь, мой скромный опыт окажется полезным и для вас.</p> <section class="giscus mx-auto mt-10 w-full"></section> <script src="https://giscus.app/client.js" data-repo="assetsfirst/blog" data-repo-id="R_kgDOOoxoDA" data-category="Blog Post Comments" data-category-id="DIC_kwDOOoxoDM4DDpbP" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="noborder_dark" data-lang="ru" data-loading="lazy" crossorigin="anonymous" id="giscus-frame" async>
+</script> <script>
+    function sendThemeToGiscus(theme) {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            'https://giscus.app'
+        );
+    }
+
+    document.addEventListener('theme-change', (event) => {
+        sendThemeToGiscus(event.detail.theme === 'dark' ? 'noborder_dark' : 'noborder_light');
+    });
 </script> </div> </article>  </main> <footer class="semibold mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-8 text-center align-top text-accent sm:flex-row sm:justify-between sm:text-sm"> <div class="me-0 font-semibold sm:me-4">
 &copy; Aleksandr Tatarchuk 2026.<span class="inline-block">&nbsp;🚀&nbsp;blog.assetsfirst.ru</span> </div> <nav aria-label="More on this site" class="flex justify-between space-x-4 font-medium text-light md:w-[14rem] w-auto"> <a class="underline-offset-2 hover:text-accent hover:underline" href="/"> Home </a><a class="underline-offset-2 hover:text-accent hover:underline" href="/about/"> About </a><a class="underline-offset-2 hover:text-accent hover:underline" href="/posts/"> Blog </a><a class="underline-offset-2 hover:text-accent hover:underline" href="/notes/"> Notes </a> </nav> </footer> </div> </div> </div> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("buttons-panel");e?(e.classList.add("fixed"),console.log("Class 'fixed' added to the buttons-panel element.")):console.error("Element with ID 'buttons-panel' not found.")});
 //# sourceMappingURL=_...slug_.astro_astro_type_script_index_0_lang.BNc1jUbE.js.map</script>
